@@ -74,6 +74,7 @@ class MainScreenState extends State<MainScreen>
               ))
           .toList());
 
+  //탭의 히스토리 관리 함수
   Future<bool> _handleBackPressed() async {
     final isFirstRouteInCurrentTab =
         (await _currentTabNavigationKey.currentState?.maybePop() == false);
