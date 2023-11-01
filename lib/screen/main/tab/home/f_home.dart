@@ -32,7 +32,7 @@ class HomeFragment extends StatelessWidget {
                       context.showSnackbar('토스뱅크 눌렸습니다.');
                     },
                   ),
-                  ...bankAccounts
+                  ...bankAccounts //여기 까지 한듯?
                       .map((e) => Text(
                             e.accountTypeName ?? e.bank.name,
                             style: TextStyle(color: Colors.white),
