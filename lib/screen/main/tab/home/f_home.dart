@@ -25,6 +25,7 @@ class HomeFragment extends StatelessWidget {
       child: Container(
         child: Stack(
           children: [
+<<<<<<< HEAD
             RefreshIndicator(
               //새로고침 인디케이터 500밀리초
               edgeOffset: TtossAppBar.appBarHeight,
@@ -57,6 +58,26 @@ class HomeFragment extends StatelessWidget {
                   ],
                 ).pSymmetric(h: 10),
               ),
+=======
+            SingleChildScrollView(
+              padding: EdgeInsets.only(top: 60),
+              child: Column(
+                children: [
+                  BigButton(
+                    text: '토스뱅크',
+                    onTap: () {
+                      context.showSnackbar('토스뱅크 눌렸습니다.');
+                    },
+                  ),
+                  ...bankAccounts //여기 까지 한듯?
+                      .map((e) => Text(
+                            e.accountTypeName ?? e.bank.name,
+                            style: TextStyle(color: Colors.white),
+                          ))
+                      .toList(),
+                ],
+              ).pSymmetric(h: 10),
+>>>>>>> 37356086f77364f7eb6aad6c34de4cbadcdb85d3
             ),
             const TtossAppBar(),
           ],
