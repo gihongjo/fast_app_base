@@ -16,12 +16,47 @@ final bankAccountShinhan3 = BankAccount(
   3000000,
   accountTypeName: '저축예금',
 );
+final bankAccountShinhan4 = BankAccount(
+  bankShinhan,
+  3000000,
+  accountTypeName: '저축예금',
+);
+final bankAccountShinhan5 = BankAccount(
+  bankShinhan,
+  3000000,
+  accountTypeName: '저축예금',
+);
+final bankAccountShinhan6 = BankAccount(
+  bankShinhan,
+  3000000,
+  accountTypeName: '저축예금',
+);
+final bankAccountShinhan7 = BankAccount(
+  bankShinhan,
+  3000000,
+  accountTypeName: '저축예금',
+);
+final bankAccountShinhan8 = BankAccount(
+  bankShinhan,
+  3000000,
+  accountTypeName: '저축예금',
+);
+final bankAccountShinhan9 = BankAccount(
+  bankShinhan,
+  3000000,
+  accountTypeName: '저축예금',
+);
 final bankAccountToss = BankAccount(
   bankTtoss,
   5000000,
 );
 final bankAccountKakao =
     BankAccount(bankKakao, 7000000, accountTypeName: '입출금 통장');
+
+final bankAccount = BankAccount(
+  bankKakao,
+  500000,
+);
 
 main() {
   print('object');
@@ -31,6 +66,10 @@ final bankAccounts = [
   bankAccountShinhan1,
   bankAccountShinhan2,
   bankAccountShinhan3,
-  bankAccountShinhan3,
-  bankAccountToss
+  bankAccountShinhan4,
+  bankAccountToss,
+  bankAccountShinhan5,
+  bankAccountShinhan6,
+  bankAccountShinhan7,
+  bankAccountShinhan8,
 ];
